@@ -1,0 +1,14 @@
+- - - FromDevice p1
+FromDevice - - Classifier 12/0800 -
+Classifier 1 - ToDevice p2
+Classifier 0 - Strip 14
+Strip - - CheckIPHeader -
+CheckIPHeader - - ReadState -
+ReadState 1 - ToDevice p2
+ReadState 0 - SessionCheck -
+SessionCheck 1 - ToDevice p2
+SessionCheck 2 - Discard -
+SessionCheck 0 - WriteState -
+WriteState - - ToDevice p2
+- - - FromDevice p2
+FromDevice - - ToDevice p1
