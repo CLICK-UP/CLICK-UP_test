@@ -1,0 +1,9 @@
+rm -rf ./connectmap.state
+rm -rf ./passmap.state
+rm -rf ./ClickDriver/compile.txt
+rm -rf ./confgenerator/connectmap.state
+rm -rf ./confgenerator/passmap.state
+rm -rf ./confgenerator/run.click
+rm -rf ./udf/*
+rm -rf ./ServiceContext/elementmap.xml
+cp ./ServiceContext/elementmap.xml.bak ./ServiceContext/elementmap.xml
